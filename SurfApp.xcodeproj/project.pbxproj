@@ -15,6 +15,7 @@
 		CF0310F5299662B0006C2B97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF0310F3299662B0006C2B97 /* LaunchScreen.storyboard */; };
 		CF40A48C2996AE450014FDD3 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF40A48B2996AE450014FDD3 /* CollectionViewCell.swift */; };
 		CF40A48E2996AE5C0014FDD3 /* ViewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF40A48D2996AE5C0014FDD3 /* ViewController + Extension.swift */; };
+		CF40A4B42997D9010014FDD3 /* GridViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF40A4B32997D9010014FDD3 /* GridViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		CF0310F6299662B0006C2B97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF40A48B2996AE450014FDD3 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		CF40A48D2996AE5C0014FDD3 /* ViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController + Extension.swift"; sourceTree = "<group>"; };
+		CF40A4B32997D9010014FDD3 /* GridViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				CF40A48B2996AE450014FDD3 /* CollectionViewCell.swift */,
+				CF40A4B32997D9010014FDD3 /* GridViewCell.swift */,
 			);
 			path = CollectionViewCells;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 			files = (
 				CF40A48E2996AE5C0014FDD3 /* ViewController + Extension.swift in Sources */,
 				CF0310ED299662AE006C2B97 /* ViewController.swift in Sources */,
+				CF40A4B42997D9010014FDD3 /* GridViewCell.swift in Sources */,
 				CF0310E9299662AE006C2B97 /* AppDelegate.swift in Sources */,
 				CF40A48C2996AE450014FDD3 /* CollectionViewCell.swift in Sources */,
 				CF0310EB299662AE006C2B97 /* SceneDelegate.swift in Sources */,
