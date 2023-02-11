@@ -194,6 +194,8 @@
                         <outlet property="button" destination="mFp-wf-hwJ" id="Pbd-Bl-E9J"/>
                         <outlet property="collectionView" destination="ahj-fe-VxK" id="mfR-0m-kgA"/>
                         <outlet property="contentView" destination="sW2-4v-Bwg" id="tAJ-KT-ceN"/>
+                        <outlet property="contentViewConstraint" destination="FH5-VU-UjU" id="h4f-bX-Zkv"/>
+                        <outlet property="gridView" destination="lCm-ur-yGx" id="pnB-SL-VQn"/>
                         <outlet property="image" destination="WMa-w7-Fek" id="bnh-GU-4P8"/>
                     </connections>
                 </viewController>
