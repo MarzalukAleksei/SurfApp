@@ -47,27 +47,6 @@
                                                 <color key="textColor" name="TextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mFp-wf-hwJ">
-                                                <rect key="frame" x="151" y="679" width="219" height="60"/>
-                                                <color key="backgroundColor" name="SelectedButtonColor"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="60" id="FmJ-jF-4jv"/>
-                                                    <constraint firstAttribute="width" constant="219" id="Iop-d0-VZC"/>
-                                                </constraints>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Отправить заявку">
-                                                    <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </buttonConfiguration>
-                                                <connections>
-                                                    <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Km2-gl-JHa"/>
-                                                </connections>
-                                            </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Хочешь к нам?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aB5-iA-lvX">
-                                                <rect key="frame" x="20" y="702" width="100" height="17"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <color key="textColor" name="TextColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ahj-fe-VxK">
                                                 <rect key="frame" x="20" y="126.33333333333331" width="480" height="44"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -164,18 +143,14 @@
                                         <constraints>
                                             <constraint firstItem="ahj-fe-VxK" firstAttribute="top" secondItem="UG1-jZ-QO7" secondAttribute="bottom" constant="12" id="44G-gK-DPf"/>
                                             <constraint firstItem="lCm-ur-yGx" firstAttribute="leading" secondItem="sW2-4v-Bwg" secondAttribute="leading" constant="20" id="4hQ-nE-una"/>
-                                            <constraint firstAttribute="bottom" secondItem="aB5-iA-lvX" secondAttribute="bottom" constant="44" id="5Gt-Hu-rGB"/>
                                             <constraint firstAttribute="height" constant="763" id="Aji-HB-Ebl"/>
-                                            <constraint firstItem="aB5-iA-lvX" firstAttribute="leading" secondItem="sW2-4v-Bwg" secondAttribute="leading" constant="20" id="Daf-cC-yQ4"/>
                                             <constraint firstAttribute="trailing" secondItem="UG1-jZ-QO7" secondAttribute="trailing" constant="20" id="E57-21-21Z"/>
                                             <constraint firstItem="lCm-ur-yGx" firstAttribute="top" secondItem="5hn-VH-xu6" secondAttribute="bottom" constant="12" id="GrI-oB-z1L"/>
-                                            <constraint firstAttribute="trailing" secondItem="mFp-wf-hwJ" secondAttribute="trailing" constant="20" id="HSp-hU-9HT"/>
                                             <constraint firstItem="XJf-P5-KkJ" firstAttribute="top" secondItem="sW2-4v-Bwg" secondAttribute="top" constant="20" id="Trk-Rw-5fa"/>
                                             <constraint firstItem="XJf-P5-KkJ" firstAttribute="leading" secondItem="sW2-4v-Bwg" secondAttribute="leading" constant="24" id="Uwq-8K-9Ui"/>
                                             <constraint firstItem="5hn-VH-xu6" firstAttribute="top" secondItem="ahj-fe-VxK" secondAttribute="bottom" constant="24" id="dYF-aH-7Lu"/>
                                             <constraint firstItem="ahj-fe-VxK" firstAttribute="leading" secondItem="sW2-4v-Bwg" secondAttribute="leading" constant="20" id="iJi-Qs-L9u"/>
                                             <constraint firstItem="UG1-jZ-QO7" firstAttribute="top" secondItem="XJf-P5-KkJ" secondAttribute="bottom" constant="12" id="kx6-5g-Mzk"/>
-                                            <constraint firstAttribute="bottom" secondItem="mFp-wf-hwJ" secondAttribute="bottom" constant="24" id="mfA-mo-Pga"/>
                                             <constraint firstItem="UG1-jZ-QO7" firstAttribute="leading" secondItem="sW2-4v-Bwg" secondAttribute="leading" constant="20" id="okd-7R-xh3"/>
                                             <constraint firstItem="5hn-VH-xu6" firstAttribute="leading" secondItem="sW2-4v-Bwg" secondAttribute="leading" constant="20" id="vYt-Hs-mQi"/>
                                             <constraint firstAttribute="trailing" secondItem="lCm-ur-yGx" secondAttribute="trailing" id="yqm-xz-BLu"/>
@@ -190,17 +165,42 @@
                                     <constraint firstAttribute="trailing" secondItem="sW2-4v-Bwg" secondAttribute="trailing" id="yBO-8W-b2v"/>
                                 </constraints>
                             </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mFp-wf-hwJ">
+                                <rect key="frame" x="151" y="726" width="219" height="60"/>
+                                <color key="backgroundColor" name="SelectedButtonColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="FmJ-jF-4jv"/>
+                                    <constraint firstAttribute="width" constant="219" id="Iop-d0-VZC"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Отправить заявку">
+                                    <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Km2-gl-JHa"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Хочешь к нам?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aB5-iA-lvX">
+                                <rect key="frame" x="20" y="749" width="100" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" name="TextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aB5-iA-lvX" secondAttribute="bottom" constant="44" id="9n4-b7-Vfd"/>
                             <constraint firstItem="IlE-LI-da5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="H6o-x4-Y20"/>
                             <constraint firstItem="WMa-w7-Fek" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-169" id="Kkn-YM-RBw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mFp-wf-hwJ" secondAttribute="bottom" constant="24" id="Ptb-wp-qrq"/>
                             <constraint firstItem="IlE-LI-da5" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="QaV-7M-vXZ"/>
                             <constraint firstItem="WMa-w7-Fek" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="-99" id="WHs-la-WKM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mFp-wf-hwJ" secondAttribute="trailing" constant="20" id="k3h-Vd-P5b"/>
                             <constraint firstItem="IlE-LI-da5" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="mej-5w-roP"/>
                             <constraint firstItem="IlE-LI-da5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="nsd-Ap-w5Z"/>
                             <constraint firstItem="sW2-4v-Bwg" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="xqz-0j-cHS"/>
+                            <constraint firstItem="aB5-iA-lvX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="zNd-nd-zpp"/>
                         </constraints>
                     </view>
                     <connections>
