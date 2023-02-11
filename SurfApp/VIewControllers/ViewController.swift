@@ -14,23 +14,31 @@ class ViewController: UIViewController {
     @IBOutlet weak var button: UIButton!
     @IBOutlet weak var image: UIImageView!
     
-    let cells = ["IOS", "Android", "Desing", "QA", "Flutter", "PM"]
-    let rowsInSection = 10
+    let list = ["IOS", "Android", "Desing", "QA", "Flutter", "PM"]
+    var rowsInSection: Int { list.count * 1000 }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        image.image = UIImage(named: "36")
-        button.layer.cornerRadius = button.bounds.height / 2
+        loadingSettings()
     }
 
     @IBAction func button(_ sender: Any) {
-        massage()
+        massage(with: "Поздравляем!", massage: "Ваша заявка успешно отправлена!")
     }
     
-    private func massage() {
-        let alert = UIAlertController(title: "Поздравляем!", message: "Ваша заявка успешно отправлена!", preferredStyle: .alert)
+    private func massage(with title: String, massage: String) {
+        let alert = UIAlertController(title: title,
+                                      message: massage,
+                                      preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Закрыть", style: .cancel))
         self.present(alert, animated: true, completion: nil)
+    }
+    
+    private func loadingSettings() {
+        contentView.layer.cornerRadius = contentView.bounds.width * 0.1
+        image.image = UIImage(named: "36")
+        button.layer.cornerRadius = button.bounds.height / 2
+        collectionView.scrollToItem(at: IndexPath(item: rowsInSection / 2, section: 0), at: .left, animated: false)
     }
 }
 
