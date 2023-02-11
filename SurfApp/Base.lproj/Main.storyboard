@@ -166,10 +166,10 @@
                                 </constraints>
                             </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jRv-ez-e8S">
-                                <rect key="frame" x="0.0" y="726" width="390" height="60"/>
+                                <rect key="frame" x="0.0" y="726" width="390" height="84"/>
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="Jwa-e5-Iev"/>
+                                    <constraint firstAttribute="height" constant="84" id="Jwa-e5-Iev"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mFp-wf-hwJ">
@@ -199,7 +199,7 @@
                         <constraints>
                             <constraint firstItem="jRv-ez-e8S" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9N7-D5-GEd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aB5-iA-lvX" secondAttribute="bottom" constant="44" id="9n4-b7-Vfd"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jRv-ez-e8S" secondAttribute="bottom" constant="24" id="9nJ-zE-FKf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jRv-ez-e8S" secondAttribute="bottom" id="9nJ-zE-FKf"/>
                             <constraint firstItem="jRv-ez-e8S" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Aed-Wl-B5T"/>
                             <constraint firstItem="IlE-LI-da5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="H6o-x4-Y20"/>
                             <constraint firstItem="WMa-w7-Fek" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-169" id="Kkn-YM-RBw"/>
@@ -218,6 +218,7 @@
                         <outlet property="collectionView" destination="ahj-fe-VxK" id="mfR-0m-kgA"/>
                         <outlet property="contentView" destination="sW2-4v-Bwg" id="tAJ-KT-ceN"/>
                         <outlet property="contentViewConstraint" destination="uE0-0S-662" id="Voq-Da-9HY"/>
+                        <outlet property="contentViewHightConstraint" destination="Aji-HB-Ebl" id="znr-XU-Cje"/>
                         <outlet property="gridView" destination="lCm-ur-yGx" id="pnB-SL-VQn"/>
                         <outlet property="image" destination="WMa-w7-Fek" id="bnh-GU-4P8"/>
                     </connections>

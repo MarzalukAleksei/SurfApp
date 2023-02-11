@@ -7,15 +7,6 @@
 
 import UIKit
 
-//enum State {
-//    case open
-//    case close
-//
-//    var opposite: State {
-//        return self == .open ? .close : .open
-//    }
-//}
-
 class ViewController: UIViewController {
 
     @IBOutlet weak var image: UIImageView!
@@ -24,9 +15,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var gridView: UICollectionView!
     @IBOutlet weak var button: UIButton!
     @IBOutlet weak var contentViewConstraint: NSLayoutConstraint!
+    @IBOutlet weak var contentViewHightConstraint: NSLayoutConstraint!
     
     let list = ["IOS", "Android", "Desing", "QA", "Flutter", "PM"]
     var rowsInView: Int { list.count * 10 }
+    var offSetContentView: CGFloat { button.bounds.height - 24 }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,8 +46,7 @@ class ViewController: UIViewController {
         collectionView.scrollToItem(at: IndexPath(item: rowsInView / 2, section: 0), at: .left, animated: false)
         
         self.contentViewConstraint.constant = 450
-        self.gridView.alpha = 0
-//        self.view.layoutIfNeeded()
+        self.contentViewHightConstraint.constant = contentViewHightConstraint.constant - offSetContentView
         
     }
 }
