@@ -25,7 +25,7 @@
                                     <constraint firstAttribute="width" constant="713" id="reE-fV-UiJ"/>
                                 </constraints>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IlE-LI-da5">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IlE-LI-da5">
                                 <rect key="frame" x="0.0" y="47" width="390" height="763"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sW2-4v-Bwg">
@@ -223,6 +223,7 @@
                         <outlet property="contentView" destination="sW2-4v-Bwg" id="tAJ-KT-ceN"/>
                         <outlet property="contentViewConstraint" destination="uE0-0S-662" id="Voq-Da-9HY"/>
                         <outlet property="contentViewHightConstraint" destination="Aji-HB-Ebl" id="znr-XU-Cje"/>
+                        <outlet property="gridView" destination="NdD-hU-sPe" id="taX-1n-hj4"/>
                         <outlet property="image" destination="WMa-w7-Fek" id="bnh-GU-4P8"/>
                     </connections>
                 </viewController>

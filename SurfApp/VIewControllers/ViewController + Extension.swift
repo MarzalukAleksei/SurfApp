@@ -23,7 +23,12 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
             let index = indexPath.row % list.count
             cell.label.text = list[index]
             cell.backgroundColor = UIColor(named: "BackgroundButtonColor")
+            cell.label.textColor = .black
             cell.layer.cornerRadius = cell.bounds.height * 0.20
+            if index == selectedCell {
+                cell.backgroundColor = UIColor(named: "TappedButtonColor")
+                cell.label.textColor = .white
+            }
             return cell
         } else {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! CollectionViewCell

@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     let list = ["IOS", "Android", "Desing", "QA", "Flutter", "PM"]
     var rowsInView: Int { list.count * 10 }
     var offSetContentView: CGFloat { button.bounds.height - 24 }
+    var selectedCell = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
