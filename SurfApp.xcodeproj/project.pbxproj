@@ -16,9 +16,10 @@
 		CF40A48C2996AE450014FDD3 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF40A48B2996AE450014FDD3 /* CollectionViewCell.swift */; };
 		CF40A48E2996AE5C0014FDD3 /* ViewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF40A48D2996AE5C0014FDD3 /* ViewController + Extension.swift */; };
 		CF40A4B42997D9010014FDD3 /* GridViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF40A4B32997D9010014FDD3 /* GridViewCell.swift */; };
-		CF40A4B82998502E0014FDD3 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF40A4B72998502E0014FDD3 /* Data.swift */; };
+		CF40A4B82998502E0014FDD3 /* DefaultData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF40A4B72998502E0014FDD3 /* DefaultData.swift */; };
 		CF40A4BF2998DB8C0014FDD3 /* Targets.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF40A4BE2998DB8C0014FDD3 /* Targets.plist */; };
 		CF40A4C12998DC720014FDD3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF40A4C02998DC720014FDD3 /* Images.xcassets */; };
+		CF40A4C42998F31A0014FDD3 /* GridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF40A4C32998F31A0014FDD3 /* GridLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,9 +34,10 @@
 		CF40A48B2996AE450014FDD3 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		CF40A48D2996AE5C0014FDD3 /* ViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController + Extension.swift"; sourceTree = "<group>"; };
 		CF40A4B32997D9010014FDD3 /* GridViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewCell.swift; sourceTree = "<group>"; };
-		CF40A4B72998502E0014FDD3 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		CF40A4B72998502E0014FDD3 /* DefaultData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultData.swift; sourceTree = "<group>"; };
 		CF40A4BE2998DB8C0014FDD3 /* Targets.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Targets.plist; sourceTree = "<group>"; };
 		CF40A4C02998DC720014FDD3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CF40A4C32998F31A0014FDD3 /* GridLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,11 +72,12 @@
 			children = (
 				CF0310E8299662AE006C2B97 /* AppDelegate.swift */,
 				CF0310EA299662AE006C2B97 /* SceneDelegate.swift */,
-				CF40A4B72998502E0014FDD3 /* Data.swift */,
+				CF40A4C5299959580014FDD3 /* Model */,
 				CF40A4BC2998D1D60014FDD3 /* SupportingFIles */,
 				CF40A48F2996CEAA0014FDD3 /* VIewControllers */,
 				CF40A4922996CECA0014FDD3 /* Views */,
 				CF40A4BD2998DAF20014FDD3 /* Assets */,
+				CF40A4C22998F3010014FDD3 /* Layout */,
 				CF40A4BB2998D16B0014FDD3 /* Storybords */,
 			);
 			path = SurfApp;
@@ -123,6 +126,22 @@
 				CF40A4C02998DC720014FDD3 /* Images.xcassets */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		CF40A4C22998F3010014FDD3 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				CF40A4C32998F31A0014FDD3 /* GridLayout.swift */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		CF40A4C5299959580014FDD3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CF40A4B72998502E0014FDD3 /* DefaultData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,9 +221,10 @@
 				CF0310ED299662AE006C2B97 /* ViewController.swift in Sources */,
 				CF40A4B42997D9010014FDD3 /* GridViewCell.swift in Sources */,
 				CF0310E9299662AE006C2B97 /* AppDelegate.swift in Sources */,
-				CF40A4B82998502E0014FDD3 /* Data.swift in Sources */,
+				CF40A4B82998502E0014FDD3 /* DefaultData.swift in Sources */,
 				CF40A48C2996AE450014FDD3 /* CollectionViewCell.swift in Sources */,
 				CF0310EB299662AE006C2B97 /* SceneDelegate.swift in Sources */,
+				CF40A4C42998F31A0014FDD3 /* GridLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

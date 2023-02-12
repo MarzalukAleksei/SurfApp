@@ -17,14 +17,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var contentViewConstraint: NSLayoutConstraint!
     @IBOutlet weak var contentViewHightConstraint: NSLayoutConstraint!
     
-    let list = ["IOS", "Android", "Desing", "QA", "Flutter", "PM"]
-    var offSetContentView: CGFloat { button.bounds.height - 24 }
+    var offSetContentView: CGFloat { button.bounds.height - DefaultData.bottonOffset }
     var gridCellState = 0
     var collectionCell: Int? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
         loadingSettings()
+        let layout = GridLayout()
+        layout.delegate = self
+        self.gridView.collectionViewLayout = layout
     }
 
     @IBAction func button(_ sender: Any) {
@@ -45,7 +47,7 @@ class ViewController: UIViewController {
         button.layer.cornerRadius = button.bounds.height / 2
 //        collectionView.scrollToItem(at: IndexPath(item: 1, section: 0), at: .left, animated: false)
         
-        self.contentViewConstraint.constant = 450
+        self.contentViewConstraint.constant = DefaultData.mainConstraint
         self.contentViewHightConstraint.constant = contentViewHightConstraint.constant - offSetContentView
         
     }

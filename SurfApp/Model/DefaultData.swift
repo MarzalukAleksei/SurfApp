@@ -8,11 +8,10 @@
 import UIKit
 
 struct DefaultData {
-    static let image: UIImage = UIImage(named: "36")!
+    static let image: UIImage = UIImage(named: "MainImage")!
     static let rowsInCollectionView: Int = 10
-    let mainConstraint: Int = 450
-    var bottonOffset = 24
-    var selectedCell = 0
+    static let mainConstraint: CGFloat = 450
+    static let bottonOffset: CGFloat = 24
     
     static func getTargets() -> [String] {
         var list: [String] = []

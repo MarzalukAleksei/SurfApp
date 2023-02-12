@@ -99,10 +99,9 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="NdD-hU-sPe">
-                                                <rect key="frame" x="20" y="243" width="480" height="100"/>
+                                                <rect key="frame" x="20" y="243" width="370" height="100"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="480" id="Po3-dg-Dbw"/>
                                                     <constraint firstAttribute="height" constant="100" id="plb-Q9-SMW"/>
                                                 </constraints>
                                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="12" minimumInteritemSpacing="12" id="aOr-67-DrT">
@@ -149,6 +148,7 @@
                                             <constraint firstItem="ahj-fe-VxK" firstAttribute="top" secondItem="UG1-jZ-QO7" secondAttribute="bottom" constant="12" id="44G-gK-DPf"/>
                                             <constraint firstAttribute="height" constant="763" id="Aji-HB-Ebl"/>
                                             <constraint firstAttribute="trailing" secondItem="UG1-jZ-QO7" secondAttribute="trailing" constant="20" id="E57-21-21Z"/>
+                                            <constraint firstAttribute="trailing" secondItem="NdD-hU-sPe" secondAttribute="trailing" id="HG2-Fp-asb"/>
                                             <constraint firstItem="NdD-hU-sPe" firstAttribute="top" secondItem="5hn-VH-xu6" secondAttribute="bottom" constant="15" id="NsS-i6-Okf"/>
                                             <constraint firstItem="XJf-P5-KkJ" firstAttribute="top" secondItem="sW2-4v-Bwg" secondAttribute="top" constant="20" id="Trk-Rw-5fa"/>
                                             <constraint firstItem="XJf-P5-KkJ" firstAttribute="leading" secondItem="sW2-4v-Bwg" secondAttribute="leading" constant="24" id="Uwq-8K-9Ui"/>
