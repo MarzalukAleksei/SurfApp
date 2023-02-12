@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     
     let list = ["IOS", "Android", "Desing", "QA", "Flutter", "PM"]
     var offSetContentView: CGFloat { button.bounds.height - 24 }
-    var gridCell = 0
+    var gridCellState = 0
     var collectionCell: Int? = nil
     
     override func viewDidLoad() {
@@ -43,7 +43,7 @@ class ViewController: UIViewController {
         contentView.layer.cornerRadius = contentView.bounds.width * 0.1
         image.image = DefaultData.image
         button.layer.cornerRadius = button.bounds.height / 2
-        collectionView.scrollToItem(at: IndexPath(item: DefaultData.rowsInCollectionView / 2, section: 0), at: .left, animated: false)
+//        collectionView.scrollToItem(at: IndexPath(item: 1, section: 0), at: .left, animated: false)
         
         self.contentViewConstraint.constant = 450
         self.contentViewHightConstraint.constant = contentViewHightConstraint.constant - offSetContentView
