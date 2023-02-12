@@ -11,9 +11,9 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == collectionView.viewWithTag(1) {
-            return rowsInView
+            return DefaultData.rowsInCollectionView * 10
         } else {
-            return rowsInView
+            return DefaultData.rowsInCollectionView * 10
         }
     }
     
@@ -25,7 +25,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
             cell.backgroundColor = UIColor(named: "BackgroundButtonColor")
             cell.label.textColor = .black
             cell.layer.cornerRadius = cell.bounds.height * 0.20
-            if index == selectedCell {
+            if index == gridCell {
                 cell.backgroundColor = UIColor(named: "TappedButtonColor")
                 cell.label.textColor = .white
             }
@@ -40,5 +40,16 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
         }
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView == collectionView.viewWithTag(0) {
+            collectionView.scrollToItem(at: indexPath, at: .left, animated: true)
+        }
+        let index = indexPath.row % list.count
+        if collectionCell != nil || index != collectionCell {
+            collectionCell = index
+        } else {
+            collectionCell = nil
+        }
+    }
 }
 

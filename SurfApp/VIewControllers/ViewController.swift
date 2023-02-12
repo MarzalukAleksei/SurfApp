@@ -18,15 +18,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var contentViewHightConstraint: NSLayoutConstraint!
     
     let list = ["IOS", "Android", "Desing", "QA", "Flutter", "PM"]
-    var rowsInView: Int { list.count * 10 }
     var offSetContentView: CGFloat { button.bounds.height - 24 }
-    var selectedCell = 0
+    var gridCell = 0
+    var collectionCell: Int? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
         loadingSettings()
     }
-    
 
     @IBAction func button(_ sender: Any) {
         massage(with: "Поздравляем!", massage: "Ваша заявка успешно отправлена!")
@@ -42,9 +41,9 @@ class ViewController: UIViewController {
     
     private func loadingSettings() {
         contentView.layer.cornerRadius = contentView.bounds.width * 0.1
-        image.image = UIImage(named: "36")
+        image.image = DefaultData.image
         button.layer.cornerRadius = button.bounds.height / 2
-        collectionView.scrollToItem(at: IndexPath(item: rowsInView / 2, section: 0), at: .left, animated: false)
+        collectionView.scrollToItem(at: IndexPath(item: DefaultData.rowsInCollectionView / 2, section: 0), at: .left, animated: false)
         
         self.contentViewConstraint.constant = 450
         self.contentViewHightConstraint.constant = contentViewHightConstraint.constant - offSetContentView
