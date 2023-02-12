@@ -51,7 +51,6 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView == collectionView.viewWithTag(0) {
-            let index = indexPath.row % DefaultData.getTargets().count
             collectionView.scrollToItem(at: indexPath, at: .left, animated: true)
             if collectionCell == indexPath.row {
                 collectionCell = nil
