@@ -176,17 +176,19 @@
                                     <constraint firstAttribute="height" constant="84" id="Jwa-e5-Iev"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mFp-wf-hwJ">
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mFp-wf-hwJ">
                                 <rect key="frame" x="151" y="726" width="219" height="60"/>
-                                <color key="backgroundColor" name="SelectedButtonColor"/>
+                                <color key="backgroundColor" name="DarkTextColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="FmJ-jF-4jv"/>
                                     <constraint firstAttribute="width" constant="219" id="Iop-d0-VZC"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Отправить заявку">
-                                    <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </buttonConfiguration>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Отправить заявку">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="ButtonState"/>
                                 <connections>
                                     <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Km2-gl-JHa"/>
                                 </connections>
@@ -233,10 +235,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ButtonState" width="434" height="116"/>
         <namedColor name="DarkTextColor">
-            <color red="0.19215686274509805" green="0.19215686274509805" blue="0.19215686274509805" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="SelectedButtonColor">
             <color red="0.19215686274509805" green="0.19215686274509805" blue="0.19215686274509805" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="TextColor">
